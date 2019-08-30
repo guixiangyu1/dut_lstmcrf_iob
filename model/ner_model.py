@@ -324,7 +324,7 @@ class NERModel(BaseModel):
         accs = []
         correct_preds, total_correct, total_preds = 0., 0., 0.
 
-        with open("results/eng_iob_origin.txt", "w") as g:
+        with open("results/dut_iob_origin.txt", "w") as g:
 
             for words, labels in minibatches(test, self.config.batch_size):
                 labels_pred, sequence_lengths = self.predict_batch(words)
