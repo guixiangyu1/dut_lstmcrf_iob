@@ -71,9 +71,9 @@ class Config():
     use_pretrained = True
 
     # dataset
-    filename_dev = "data/valid.txt"
-    filename_test = "data/test.txt"
-    filename_train = "data/train.txt"
+    filename_dev = "data/valid_dutch.txt"
+    filename_test = "data/test_dutch.txt"
+    filename_train = "data/train_dutch.txt"
 
     # filename_dev = filename_test = filename_train = "data/test.txt" # test
 
@@ -88,7 +88,7 @@ class Config():
     train_embeddings = False
     nepochs          = 200
     dropout          = 0.5
-    batch_size       = 19
+    batch_size       = 100
     lr_method        = "adam"
     lr               = 0.001
     lr_decay         = 1.0
